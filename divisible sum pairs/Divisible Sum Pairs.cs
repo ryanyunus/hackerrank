@@ -1,43 +1,56 @@
 using System;
 
+// Menggunakan namespace System yang menyediakan kelas-kelas dan fungsi-fungsi dasar
+// yang digunakan dalam pemrograman C#
 class Program
 {
     static int divisibleSumPairs(int n, int k, int[] ar)
     {
         int count = 0;
 
+        // Loop untuk setiap elemen pada array
         for (int i = 0; i < n; i++)
         {
+            // Loop untuk mencari pasangan elemen
             for (int j = i + 1; j < n; j++)
             {
+                // Mengecek apakah penjumlahan dua elemen dapat dibagi habis oleh k
                 if ((ar[i] + ar[j]) % k == 0)
                 {
-                    count++;
+                    count++; // Jika ya, tambahkan count
                 }
             }
         }
 
-        return count;
+        return count; // Mengembalikan jumlah pasangan yang memenuhi kondisi
     }
 
     static void Main()
     {
         int n, k;
+
+        // Membaca input jumlah elemen dan bilangan pembagi dari pengguna
         string[] input = Console.ReadLine().Split();
         n = int.Parse(input[0]);
         k = int.Parse(input[1]);
 
         int[] ar = new int[n];
+
+        // Membaca elemen-elemen array dari pengguna
         string[] arrayInput = Console.ReadLine().Split();
         for (int i = 0; i < n; i++)
         {
             ar[i] = int.Parse(arrayInput[i]);
         }
 
+        // Memanggil fungsi divisibleSumPairs untuk menghitung jumlah pasangan yang memenuhi kondisi
         int result = divisibleSumPairs(n, k, ar);
+
+        // Menampilkan hasil perhitungan ke layar
         Console.WriteLine(result);
     }
 }
+
 /*
 mengimplementasikan sebuah fungsi untuk mencari jumlah pasangan angka dalam sebuah array yang dapat dibagi habis oleh suatu bilangan.
 
