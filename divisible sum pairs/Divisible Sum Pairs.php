@@ -1,29 +1,23 @@
-function divisibleSumPairs($n, $k, $ar) {
-  $count = 0;
+<?php
 
-  for ($i = 0; $i < $n; $i++) {
-    for ($j = $i + 1; $j < $n; $j++) {
-      if (($ar[$i] + $ar[$j]) % $k === 0) {
-        $count++;
-      }
+function divisibleSumPairs($n, $k, $ar)
+{
+    $count = 0;
+    for ($i = 0; $i < $n; $i++) {
+        for ($j = $i + 1; $j < $n; $j++) {
+            if (($ar[$i] + $ar[$j]) % $k == 0) {
+                $count++;
+            }
+        }
     }
-  }
-
-  return $count;
+    return $count;
 }
 
-// Read input from stdin
-$stdin = fopen('php://stdin', 'r');
-$inputLines = [];
-
-while (($line = fgets($stdin)) !== false) {
-  $inputLines[] = trim($line);
-}
-
-fclose($stdin);
-
-list($n, $k) = explode(' ', $inputLines[0]);
-$ar = array_map('intval', explode(' ', $inputLines[1]));
-
+$input = explode(" ", readline());
+$n = intval($input[0]);
+$k = intval($input[1]);
+$ar = array_map('intval', explode(" ", readline()));
 $result = divisibleSumPairs($n, $k, $ar);
-echo $result . "\n";
+echo $result;
+
+?>
