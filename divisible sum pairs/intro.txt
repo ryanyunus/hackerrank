@@ -1,0 +1,20 @@
+ "Divisible Sum Pairs" di platform HackerRank. Tujuannya adalah untuk menemukan berapa pasang indeks dalam sebuah array yang memiliki jumlah yang dapat dibagi habis oleh bilangan bulat tertentu.
+
+Berikut adalah penjelasan tentang pola soal yang diberikan:
+
+Anda diberikan sebuah array bilangan bulat n dengan panjang yang diberikan, serta bilangan bulat k yang diberikan.
+
+Tugas Anda adalah menemukan berapa banyak pasang indeks (i, j) dalam array n di mana i < j dan n[i] + n[j] dapat dibagi habis oleh k.
+
+Misalnya, jika Anda diberikan array [1, 2, 3, 4, 5] dan bilangan bulat k adalah 3, maka pasangan-pasangan berikut memenuhi kriteria tersebut:
+
+(1, 2): 1 + 2 = 3 (dapat dibagi habis oleh 3)
+(2, 5): 2 + 5 = 7 (tidak dapat dibagi habis oleh 3)
+(4, 5): 4 + 5 = 9 (dapat dibagi habis oleh 3)
+Sehingga jumlah pasangan yang memenuhi kondisi tersebut adalah 2.
+
+Untuk menyelesaikan tugas ini, Anda perlu melakukan iterasi melalui semua pasangan indeks (i, j) di array dan memeriksa apakah n[i] + n[j] dapat dibagi habis oleh k. Jika ya, Anda meningkatkan hitungan jumlah pasangan yang memenuhi kondisi tersebut.
+
+Pola soal ini menekankan kemampuan Anda dalam mengiterasi melalui array dan menggunakan operasi matematika sederhana untuk mengecek sifat divisibilitas.
+
+Anda dapat melihat detail lebih lanjut tentang pola soal ini, termasuk contoh masukan dan keluaran yang diharapkan, di tautan yang telah Anda berikan.
