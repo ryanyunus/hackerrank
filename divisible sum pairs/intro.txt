@@ -1,4 +1,6 @@
- "Divisible Sum Pairs" (Pasangan Jumlah yang Dapat Dibagi) di platform HackerRank. Tujuannya adalah untuk menemukan berapa pasang indeks dalam sebuah array yang memiliki jumlah yang dapat dibagi habis oleh bilangan bulat tertentu.
+ "Divisible Sum Pairs" (Pasangan Jumlah yang Dapat Dibagi) di platform HackerRank.
+ Tujuannya adalah untuk menemukan berapa pasang indeks dalam sebuah array yang memiliki 
+ jumlah yang dapat dibagi habis oleh bilangan bulat tertentu.
 
 Berikut adalah penjelasan tentang pola soal yang diberikan:
 
@@ -13,8 +15,12 @@ Misalnya, jika Anda diberikan array [1, 2, 3, 4, 5] dan bilangan bulat k adalah 
 (4, 5): 4 + 5 = 9 (dapat dibagi habis oleh 3)
 Sehingga jumlah pasangan yang memenuhi kondisi tersebut adalah 2.
 
-Untuk menyelesaikan tugas ini, Anda perlu melakukan iterasi melalui semua pasangan indeks (i, j) di array dan memeriksa apakah n[i] + n[j] dapat dibagi habis oleh k. Jika ya, Anda meningkatkan hitungan jumlah pasangan yang memenuhi kondisi tersebut.
+Untuk menyelesaikan tugas ini, Anda perlu melakukan iterasi melalui semua pasangan indeks (i, j) 
+di array dan memeriksa apakah n[i] + n[j] dapat dibagi habis oleh k. Jika ya, Anda meningkatkan
+hitungan jumlah pasangan yang memenuhi kondisi tersebut.
 
-Pola soal ini menekankan kemampuan Anda dalam mengiterasi melalui array dan menggunakan operasi matematika sederhana untuk mengecek sifat divisibilitas.
+Pola soal ini menekankan kemampuan Anda dalam mengiterasi melalui array dan menggunakan 
+operasi matematika sederhana untuk mengecek sifat divisibilitas.
 
-Anda dapat melihat detail lebih lanjut tentang pola soal ini, termasuk contoh masukan dan keluaran yang diharapkan, di tautan yang telah Anda berikan.
+Anda dapat melihat detail lebih lanjut tentang pola soal ini,
+termasuk contoh masukan dan keluaran yang diharapkan, di tautan yang telah Anda berikan.
