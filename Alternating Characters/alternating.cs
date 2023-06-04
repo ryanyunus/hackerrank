@@ -53,3 +53,53 @@ public class Program
         }
     }
 }
+/*
+using System; adalah pernyataan menggunakan (using statement) yang mengimpor namespace System yang berisi kelas-kelas dasar dan tipe-tipe yang umum digunakan dalam C#.
+
+public class Program adalah deklarasi kelas dengan nama "Program". Ini adalah kelas utama yang akan menjadi titik masuk program.
+
+public static int alternatingCharacters(string s) adalah deklarasi fungsi alternatingCharacters yang mengambil string s sebagai parameter dan mengembalikan tipe data integer.
+
+int deletionCount = 0; adalah deklarasi dan inisialisasi variabel lokal deletionCount dengan nilai awal 0. Variabel ini akan digunakan untuk menghitung jumlah karakter yang perlu dihapus.
+
+char prevChar = s[0]; adalah deklarasi dan inisialisasi variabel lokal prevChar dengan karakter pertama dari string s. Variabel ini akan digunakan untuk melacak karakter sebelumnya saat memeriksa apakah karakter saat ini bersebelahan dengan jenis yang sama.
+
+for (int i = 1; i < s.Length; i++) adalah perulangan yang akan memeriksa setiap karakter dalam string s, dimulai dari indeks 1. Ini karena karakter pertama telah diambil sebelumnya untuk diinisialisasi variabel prevChar.
+
+14-17. Dalam perulangan, kita memeriksa apakah karakter saat ini sama dengan karakter sebelumnya (s[i] == prevChar). Jika benar, artinya karakter saat ini bersebelahan dengan jenis yang sama, dan kita menambahkan 1 ke deletionCount untuk menghitung jumlah karakter yang perlu dihapus. Jika tidak, artinya karakter saat ini berbeda, kita mengubah prevChar menjadi karakter saat ini.
+
+return deletionCount; mengembalikan jumlah karakter yang perlu dihapus sebagai hasil dari fungsi alternatingCharacters.
+23-29. Main adalah metode utama yang akan dieksekusi saat program dijalankan. Di dalamnya, kita membaca jumlah pertanyaan dari input menggunakan Console.ReadLine() dan menyimpannya dalam variabel queries. Kemudian, kita menggunakan perulangan untuk membaca setiap string input, memprosesnya menggunakan fungsi alternatingCharacters, dan mencetak hasilnya menggunakan Console.WriteLine.
+
+Sekarang, dengan menggunakan kode tersebut, Anda dapat menghitung jumlah karakter yang perlu dihapus agar sisa karakter membentuk pola bergantian dan mencetak hasilnya.
+
+=====
+Dalam masalah "Alternating Characters", pola input dan output dapat dijelaskan sebagai berikut:
+
+Pola Input:
+
+Baris pertama berisi sebuah bilangan bulat, yaitu jumlah pertanyaan (queries).
+Setiap baris berikutnya berisi sebuah string (s), yang merupakan string input yang akan diperiksa.
+Pola Output:
+
+Untuk setiap string input (s), program akan mencetak satu baris dengan sebuah bilangan bulat, yaitu jumlah karakter yang perlu dihapus agar sisa karakter membentuk pola bergantian yang diinginkan.
+5
+AAAA
+BBBBB
+ABABABAB
+BABABA
+AAABBB
+3
+4
+0
+0
+4
+Dalam contoh di atas, terdapat 5 string input yang diperiksa.
+
+Pada string pertama ("AAAA"), ada 3 karakter yang perlu dihapus agar sisa karakter membentuk pola bergantian ("ABAB").
+Pada string kedua ("BBBBB"), ada 4 karakter yang perlu dihapus agar sisa karakter membentuk pola bergantian ("ABABA").
+Pada string ketiga ("ABABABAB"), tidak ada karakter yang perlu dihapus karena karakter tersebut sudah membentuk pola bergantian.
+Pada string keempat ("BABABA"), tidak ada karakter yang perlu dihapus karena karakter tersebut sudah membentuk pola bergantian.
+Pada string kelima ("AAABBB"), ada 4 karakter yang perlu dihapus agar sisa karakter membentuk pola bergantian ("ABAB").
+Jadi, pola input adalah jumlah pertanyaan dan string input yang akan diperiksa, sedangkan pola output adalah jumlah karakter yang perlu dihapus untuk membentuk pola bergantian pada setiap string input.
+*/
