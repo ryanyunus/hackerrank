@@ -1,0 +1,2 @@
+  int queries;
+    cin>> queries;
